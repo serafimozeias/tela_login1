@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+:root {
+    --cor-h1-esquerdo: #77ffc0;
+    --cor-h1-direito: #00ff88;
+    --cor-fundo: #201b2c;
+    --cor-input: #514869;
+    --cor-buttonlogin: #511585;
+    --Login: #00ff88
+}
+
+.login {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left {
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    /*alinhar um do lado do outro*/
+    justify-content: center;
+    /*justificando ao centro*/
+    align-items: center;
+    /*alinhando ao centro*/
+    flex-direction: column;
+}
+
+.image-left {
+    width: 50%;
+    height: auto;
+}
+
+.login-left > h1 {
+    color:var(--cor-h1-esquerdo);
+    font-size: 2vw;
+}
+
+.login-right {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    /*alinhar um do lado do outro*/
+    justify-content: center;
+    /*justificando ao centro*/
+    align-items: center;
+    /*alinhando ao centro*/
+}
+
+.login-card {
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    background-color: #2f2841;
+    border-radius: 50px;
+    box-shadow: 0px 10px 140px var(--cor-sombra);
+}
+
+.login-card > h1 {
+    color:var(--cor-h1-direito);
+    font-weight: 800;
+    margin: 80;
+    text-transform: uppercase;
+}
+
+.textfield{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+    width: 100%;
+}
+
+.textfield > input {
+    background-color:var(--cor-input);
+    border: none;
+    border-radius: 10px;
+    color: #f0ffffde;
+    font-size: 20px;
+    margin: 10px;
+    outline: none;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0px 10px 40px var(--cor-sombra);
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login {
+    background-color: var(--cor-buttonlogin);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 20px 40px -12px #00ff8052;
+    color: #2b134b;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 8px 0px;
+    outline: none;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    width: 60%;
+}
